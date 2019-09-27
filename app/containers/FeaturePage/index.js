@@ -1,17 +1,5 @@
-/*
- * FeaturePage
- *
- * List all the features
- */
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
-
-import H1 from 'components/H1';
-import messages from './messages';
-import List from './List';
-import ListItem from './ListItem';
-import ListItemTitle from './ListItemTitle';
 
 export default function FeaturePage() {
   return (
@@ -23,55 +11,19 @@ export default function FeaturePage() {
           content="Feature page of React.js Boilerplate application"
         />
       </Helmet>
-      <H1>
-        <FormattedMessage {...messages.header} />
-      </H1>
-      <List>
-        <ListItem>
-          <ListItemTitle>
-            <FormattedMessage {...messages.scaffoldingHeader} />
-          </ListItemTitle>
-          <p>
-            <FormattedMessage {...messages.scaffoldingMessage} />
-          </p>
-        </ListItem>
-
-        <ListItem>
-          <ListItemTitle>
-            <FormattedMessage {...messages.feedbackHeader} />
-          </ListItemTitle>
-          <p>
-            <FormattedMessage {...messages.feedbackMessage} />
-          </p>
-        </ListItem>
-
-        <ListItem>
-          <ListItemTitle>
-            <FormattedMessage {...messages.routingHeader} />
-          </ListItemTitle>
-          <p>
-            <FormattedMessage {...messages.routingMessage} />
-          </p>
-        </ListItem>
-
-        <ListItem>
-          <ListItemTitle>
-            <FormattedMessage {...messages.networkHeader} />
-          </ListItemTitle>
-          <p>
-            <FormattedMessage {...messages.networkMessage} />
-          </p>
-        </ListItem>
-
-        <ListItem>
-          <ListItemTitle>
-            <FormattedMessage {...messages.intlHeader} />
-          </ListItemTitle>
-          <p>
-            <FormattedMessage {...messages.intlMessage} />
-          </p>
-        </ListItem>
-      </List>
+      <h1>Feature Page</h1>
+      <p>
+        Use Redux to take control of your application’s state and keep state
+        mutations manageable. If you have it, the boilerplate works with the
+        Chrome Redux DevTools extension to allow you to see, play back, and
+        change your action history!
+      </p>
+      <p>
+        Enjoy the best DX and code your app at the speed of thought! Your saved
+        changes to the CSS and JS are reflected instantaneously without
+        refreshing the page. Preserve application state even when you update
+        something in the underlying code!
+      </p>
     </div>
   );
 }
